@@ -6,7 +6,6 @@
 
 Resonance Finder is a single-file web application (`index.html`, no build step, no server) for solving the radial Schrödinger equation of a two-body system — nucleon + core, α + core, light-ion clusters — and locating its poles in the complex energy plane. Calculated levels can be laid next to ENSDF experimental data, and a model potential can be fitted to the measured spectrum automatically.
 
-![Results tab](docs/screenshots/results.png)
 
 ---
 
