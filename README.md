@@ -104,9 +104,6 @@ Typical session:
 
 ---
 
-## Citing
-
-If you use Resonance Finder in your work, please cite it using the metadata in [`CITATION.cff`](CITATION.cff) (GitHub shows a *Cite this repository* button).
 
 ## Licence
 
