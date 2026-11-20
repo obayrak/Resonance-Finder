@@ -39,8 +39,6 @@ Around 45 ready-made systems, grouped as:
 Widths are compared with experiment through a spectroscopic factor S = Γ_exp / Γ_sp.
 
 ### Experimental data
-![Experimental data tab](docs/screenshots/experimental-data.png)
-
 - **Retrieve** levels and γ transitions for any nuclide from the IAEA LiveChart (ENSDF) endpoint, or **import** ENSDF / CSV / JSON files or pasted text (a CSV template is provided).
 - Harmonizer for loaded levels, threshold & channel analyser (n, p, d, t, ³He, α, nα …) using the **AME2020** mass table (3558 nuclides, embedded).
 - **Two-body setup from a nucleus**: type a nuclide (default ¹²C) and the app proposes partitions (e.g. α + ⁸Be → ¹²C, S = 7.367 MeV) with the Pauli-forbidden node count N₀ from oscillator-quanta counting.
@@ -78,44 +76,6 @@ Typical session:
 - Live ENSDF retrieval needs network access to `nds.iaea.org`. If the browser blocks the request (CORS), the app can try public CORS proxies (checkbox), or you can download the data from [IAEA LiveChart](https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html) / [NNDC NuDat](https://www.nndc.bnl.gov/nudat3/) and import it.
 
 ---
-
-## Deploying on GitHub Pages
-
-1. Create a repository (e.g. `resonance-finder`) and push these files.
-2. *Settings → Pages → Build and deployment → Source: GitHub Actions* (the included workflow `.github/workflows/pages.yml` publishes the repository root), or choose *Deploy from a branch → main / (root)*.
-3. The app will be served at `https://<your-user>.github.io/resonance-finder/`.
-
-```bash
-git init
-git add .
-git commit -m "Initial release of Resonance Finder"
-git branch -M main
-git remote add origin https://github.com/<your-user>/resonance-finder.git
-git push -u origin main
-```
-
----
-
-## Repository layout
-
-```
-resonance-finder/
-├── index.html              # the complete application
-├── README.md
-├── LICENSE
-├── CITATION.cff
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── examples/
-│   └── 12C_levels_example.csv   # sample import file (approximate values; check against ENSDF)
-├── docs/screenshots/       # images used in this README
-├── .github/workflows/pages.yml
-├── .nojekyll
-└── .gitignore
-```
-
----
-
 ## Known limitations
 
 - **Auto-fit is slow** (tens of seconds to a few minutes for ¹²C with all four models), because each trial potential re-runs a full spectral search. A pole-tracking speed-up is planned (see `CHANGELOG.md`).
