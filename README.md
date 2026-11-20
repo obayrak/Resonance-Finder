@@ -102,8 +102,6 @@ Typical session:
 - B. Buck, H. Friedrich, C. Wheatley, Nucl. Phys. A 275, 246 (1977) — α–α potential.
 - S. Ali, A. R. Bodmer, Nucl. Phys. 80, 99 (1966) — α–α potential.
 
-Please check the references against the original sources before citing them in publications.
-
 ---
 
 ## Citing
